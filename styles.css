@@ -1,0 +1,164 @@
+body {
+    height: 1700px;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body, nav, nav>ul, header,
+main, 
+.website-info, .info-container,
+.info-container>article, .website-quote,
+.call-to-action,
+footer, 
+ul {
+    display: flex;
+}
+
+body,
+.random-info,
+main, 
+.info-container>article, .website-quote {
+    flex-direction: column;
+}
+
+.website-info, .info-container,
+.info-container *,
+.website-quote, .call-to-action,
+footer {
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    gap: 80px;
+    height: 300px;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1;
+    justify-content: space-between;
+}
+
+main>* {
+    flex-shrink: 0;
+}
+
+.call-to-action {
+    justify-content: space-between;
+    margin: 10px 15vw;
+    padding: 40px 60px;
+}
+
+nav, header, footer,
+.website-quote, .website-info {
+    padding: 10px 15vw;
+}
+
+nav, header, footer {
+    background-color: #1f2937;
+}
+
+nav>h3, header>article>h1, .call-to-action h3{
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.website-info>h3, .quote * {
+    color: #1f2937;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+a, footer, header>article>p, .call-to-action *,
+header>article>button {
+    color: #e5e7eb;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+}
+
+header>img {
+    width: 400px;
+    flex-shrink: 0;
+}
+
+header>article>h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+header>article>p {
+    font-size: 18px;
+}
+
+.website-info, .website-quote {
+    height: 400px;
+}
+
+.website-info>h3 {
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.info-container {
+    gap: 30px;
+}
+
+.info-container>article>img {
+    width: 200px;
+    height: 150px;
+    border: 5px solid #3882f6;
+    border-radius: 10px;
+}
+
+.website-quote {
+    background-color: #e5e7eb;
+}
+
+.website-quote * {
+    margin: 5px;
+}
+
+.quote>p:nth-of-type(1) {
+    font-size: 36px;
+    font-style: italic;
+}
+
+.website-quote>p:nth-of-type(2) {
+    font-size: 24px;
+    font-weight: 900;
+    align-self: flex-end;
+}
+
+.call-to-action, .call-to-action>button,
+header>article>button {
+    background-color: #3882f6;
+    border-radius: 10px;
+}
+
+.call-to-action h3, .call-to-action p {
+    margin: 5px 0px;
+}
+
+header>article>button, .call-to-action>button {
+    padding: 10px 30px;
+    border-color: #e5e7eb;
+}
